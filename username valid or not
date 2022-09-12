@@ -33,10 +33,12 @@ bool is_valid(string email)
         return 0;
     return !(Dot >= (email.length() - 1));
 }
+
 int main()
 {
     string email = "saveetha @789";
     bool ans = is_valid(email);
+  
     if (ans) {
         cout << email << " : "
              << "valid" << endl;
@@ -44,6 +46,7 @@ int main()
     else {
         cout << email << " : "
              << "invalid" << endl;
-    } 
+    }
+  
     return 0;
 }
